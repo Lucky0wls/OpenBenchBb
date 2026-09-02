@@ -121,6 +121,9 @@ def longStatBlock(test):
 
 def testResultColour(test):
 
+    if test.error:
+        if test.wins >= test.losses: return 'yellow'
+        return 'red'
     if test.passed:
         if test.elolower + test.eloupper < 0: return 'blue'
         return 'green'
