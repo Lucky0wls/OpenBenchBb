@@ -18,6 +18,7 @@
     ],
 
     "engines" : [
-        "blueberry"
+        "blueberry",
+		"Stash"
     ]
 }
